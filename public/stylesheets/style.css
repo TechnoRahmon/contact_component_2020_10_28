@@ -1,0 +1,83 @@
+body {
+  padding: 50px;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width:50%;
+}
+
+h1{ 
+  font-size: 270%;
+  color:#0b9267
+}
+
+
+input{ 
+  width:70%;
+  height: 45px;
+  border:none; 
+  padding-left: 7px;
+  font-size: 120%;
+  color:#3a3a3a;
+  margin:15px auto;
+
+}
+
+textarea{
+  width:70%;
+  height: 300px;
+  border:none; 
+  padding-left: 7px;
+  font-size: 120%;
+  color:#3a3a3a;
+  margin:15px auto;
+  resize: none;
+}
+input[type=text]:focus,input[type=tel]:focus,input[type=email]:focus,textarea:focus{
+border-bottom: 1px solid #1C9E75;
+background-color: #e8f1ee;
+}
+
+input[type=submit]{
+background-color:#1c9e75;
+color:#fff;
+cursor: pointer;
+margin-top:25px;
+margin-bottom:40px;
+height: 55px;
+}
+
+input[type=submit]:hover { 
+
+background-color: #0b9267;        }
+
+input:focus,textarea{
+outline: none;
+}
+
+
+form{ 
+  display: flex;
+   flex-direction: column;
+   width:70%;
+   justify-content: center;  
+   align-content: center; 
+   background-color: #3a3a3ae7;  
+   margin:40px 0px;      
+   padding:60px 0px 20px 0px;     
+}
+
+
+
+

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Contact us 
+  form#fo(action="/send", method="post" ,name="form1", autocomplete="off" )
+    input(type="text", name="name" ,placeholder="Enter your name",required)
+    input(type="email", name="email" , placeholder="Enter your Email", required)
+    textarea(name="content", cols="30", rows="10" , placeholder="write message here",required)
+    input(type="submit", value="send" ,name="submit",required)
+
+  script.
+     var form = document.getElementById('fo');
+     form.addEventListener('submit',(e)=>{
+     alert('mail sended')
+     document.name='';
+     document.email='';
+     document.content='';
+     })
